@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title> Unit Converter </title>
+        <style>
+            body {
+                min-height: 100vh;
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+                padding: 40px;
+                background-color: maroon;
+                background: linear-gradient(135deg, #8e44ad, #c71585)
+            }
+            select, input, button {
+                padding: 10px;
+                margin: 10px;
+                font-size: 16px;
+                width: 80%;
+                max-width: 300px;
+                border: 2px solid #8e44ad;
+                border-radius: 8px;
+                box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+                transition: 0.2s ease;
+            }
+            select:hover, input:hover, button:hover {
+                transform: scale(1.02);
+                border-color: #c71585;
+            }
+            button {
+                background-color: #8e44ad;
+                color: white;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #c71585;
+            }
+            .output {
+                margin-top: 20px;
+                font-size: 20px;
+                font-weight: bold;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .output.visible {
+                opacity: 1;
+            }
+            .card {
+                background-color: white;
+                padding: 30px;
+                border-radius: 15px;
+                max-width: 500px;
+                margin: 0 auto;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class = "card">
+        <h1 style = "color: black; font-size: 90px;"> Unit Converter </h1>
+
+        <label style = "color: black; font-size: 30px;" for = "converter"> Choose converter: </label>
+        <select id = "converter" onchange = "updateConversionOptions()">
+            <option value = "length"> Length Converter </option>
+            <option value = "temperature"> Temperature Converter </option>
+        </select>
+        <br>
+        <br>
+
+        <label for = "conversionType" style = "color:  black; font-size: 30px;"> Conversion type: </label>
+        <select id = "conversionType"></select>
+        <br>
+        <br>
+
+        <input type = "number" id = "inputValue" placeholder = "Enter value: ">
+        <button onclick = "convert()">
+            <i class="fas fa-exchange-alt"></i> Convert
+        </button>
+
+        <div class = "output" id = 'result' style = "color: black; font-size: 25px;"></div>
+
+
+        <script>
+
+            const conversionOptions = {
+                length: [
+                    {name: "Kilometers to Miles", func: val => (val * 0.621371).toFixed(2) + " miles"},
+                    {name: "Miles to Kilometers", func: val => (val * 1.609).toFixed(2) + " km"},
+                    {name: "Inches to Centimeters", func: val => (val * 2.54).toFixed(2) + " cm"},
+                    {name: "Centimeters to Inches", func: val => (val * 0.393701).toFixed(2) + " in"},
+                    {name: "Yards to Meters", func: val => (val * 0.9144).toFixed(2) + " m"},
+                    {name: "Meters to Yards", func: val => (val * 1.094).toFixed(2) + " yd"},
+                ],
+                temperature: [
+                    {name: "Fahrenheit to Celsius", func: val => ((val - 32) * (5/9)).toFixed(2) + " °C"},
+                    {name: "Celsius to Fahrenheit", func: val => ((val * 9/5) + 32).toFixed(2) + " °F"},
+                    {name: "Fahrenheit to Kelvin", func: val => ((val - 32) * (5/9) + 273.15).toFixed(2) + " K"},
+                    {name: "Kelvin to Fahrenheit", func: val => ((val - 273.15) * (9/5) + 32).toFixed(2) + " °F"},
+                    {name: "Celsius to Kelvin", func: val => (val + 273.15).toFixed(2) + " K"},
+                    {name: "Kelvin to Celsius", func: val => (val - 273.15).toFixed(2) + " °C"},
+                ]
+            };
+
+            function updateConversionOptions() {
+                const converter = document.getElementById("converter").value;
+                const conversionType = document.getElementById("conversionType");
+                conversionType.innerHTML = "";
+
+                conversionOptions[converter].forEach((option, index) => {
+                    const opt = document.createElement("option");
+                    opt.value = index;
+                    opt.text = option.name;
+                    conversionType.appendChild(opt);
+                });
+            }
+
+            function convert1() {
+                const converter = document.getElementById("converter").value;
+                const index = parseInt(document.getElementById("conversionType").value);
+                const input = parseFloat(document.getElementById("inputValue").value);
+                const result = conversionOptions[converter][index].func(input);
+                const resultDiv = document.getElementById("result").textContent = result;
+                resultDiv.textContent = result;
+                resultDiv.classList.add("visible");
+            }
+
+            function convert() {
+                const converter = document.getElementById("converter").value;
+                const index = parseInt(document.getElementById("conversionType").value);
+                const input = parseFloat(document.getElementById("inputValue").value);
+                const resultDiv = document.getElementById("result");
+
+                if (isNaN(input)) {
+                    resultDiv.textContent = "Please enter a valid number.";
+                    resultDiv.classList.add("visible");
+                    return;
+                }
+
+                const result = conversionOptions[converter][index].func(input);
+                resultDiv.textContent = result;
+                resultDiv.classList.add("visible");
+            }
+
+
+            window.onload = updateConversionOptions;
+
+        </script>
+        </div>
+    </body>
+</html>
