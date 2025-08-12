@@ -117,16 +117,6 @@
                 });
             }
 
-            function convert1() {
-                const converter = document.getElementById("converter").value;
-                const index = parseInt(document.getElementById("conversionType").value);
-                const input = parseFloat(document.getElementById("inputValue").value);
-                const result = conversionOptions[converter][index].func(input);
-                const resultDiv = document.getElementById("result").textContent = result;
-                resultDiv.textContent = result;
-                resultDiv.classList.add("visible");
-            }
-
             function convert() {
                 const converter = document.getElementById("converter").value;
                 const index = parseInt(document.getElementById("conversionType").value);

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset = "UTF-8" />
+    <meta name = "viewport" content = "width = device-width, intial-scale = 1.0"/>
+    <title> Dictionary Lookup </title>
+    <link rel = "stylesheet" href = "dictionary.css" />
+</head>
+
+<body>
+    <div class = "container">
+        <h1 style = "font-size: 70px"> Dictionary </h1>
+        <input type = "text" id = "wordInput" placeholder= "Enter a word: "/>
+        <button id = "searchBtn"> Search </button>
+
+        <div style = "font-size: 20px" id = "result" class = "hidden">
+            <h2 id = "word" class = "hidden"></h2>
+            <p><strong> Part of Speech: </strong> <span id = "partOfSpeech"></span></p>
+            <p><strong> Definition: </strong> <span id = "definition"></span></p>
+            <p><strong> Example: </strong> <span id = "example"></span></p>
+        </div>
+
+        <p id = "error" class = "error"></p>
+    </div>
+
+    <script src = "dictionary.js"></script>
+</body>
+</html>
