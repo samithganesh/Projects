@@ -37,14 +37,14 @@ input, select, button {
 }
 
 button {
-    background: #23680f;
+    background: #2ecc71;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: #23680f;
+    background: #27ae60;
 }
 
 #result {
