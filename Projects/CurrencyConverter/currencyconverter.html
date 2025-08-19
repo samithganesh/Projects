@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, intial-scale = 1.0">
+    <title> Currency Converter </title>
+    <link rel = "stylesheet" href = "currencyconverter.css">
+</head>
+
+<body>
+    <div class = "container">
+        <h1> Currency Converter </h1>
+
+        <div class = "converter">
+            <input type = "number" id = "amount" placeholder= "Amount" value = "1" min = "0" step = "0.01">
+            <select id = "fromCurrency"></select>
+            <select id = "toCurrency"></select>
+            <button id = "convertBtn"> Convert </button>
+        </div>
+
+        <div style = "font-size: 25px" id = "result"></div>
+        <p style = "font-size: 12px" id = "lastUpdated"></p>
+    </div>
+
+    <script src = "currencyconverter.js"></script>
+</body>
+</html>
