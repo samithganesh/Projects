@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.completed span {
+    text-decoration: line-through;
+    color: gray;
+    border: 1px solid gray;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+  /* Center card */
+  .container {
+    background: #fff;  
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    width: 600px;
+    max-width: 95%;
+    margin: 80px auto;     /* center on page */
+    text-align: left;      /* tasks + input aligned left */
+  }
+  
+.container h1 {
+    font-size: 36px;       /* bigger */
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: center;    /* keep title centered */
+}
+  
+  /* Input + button row */
+.input-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+  
+#input-box {
+    flex: 1;
+    padding: 16px 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+}
+  
+button {
+    padding: 16px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #2575fc;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+button:hover {
+    background: #1a5edb;
+}
+  
+  /* Task list */
+#list-container {
+    margin-top: 20px;
+}
+  
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    font-size: 18px;      /* bigger text */
+    transition: 0.3s;
+}
+  
+li:hover {
+    background: #f1f1f1;
+}
+
+li label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+  
+.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+  
+  /* Edit / Delete buttons */
+.edit-btn,
+.delete-btn {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+  
+.edit-btn {
+    background: #e4ecff;
+    color: #2575fc;
+}
+  
+.edit-btn:hover {
+    background: #d1deff;
+}
+  
+.delete-btn {
+    background: #fdeaea;
+    color: #e74c3c;
+}
+  
+.delete-btn:hover {
+    background: #f9d6d6;
+}
+  
+  /* Counter text */
+.counter {
+    margin-top: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}

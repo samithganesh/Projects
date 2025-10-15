@@ -1,0 +1,117 @@
+title,genre,rating,year
+The Shawshank Redemption,Drama,9.3,1994
+The Dark Knight,Action,9.0,2008
+Forrest Gump,Drama,8.8,1994
+Inception,Action,8.7,2010
+The Matrix,Sci-Fi,8.7,1999
+Toy Story,Animation,8.3,1995
+Finding Nemo,Animation,8.1,2003
+Superbad,Comedy,7.6,2007
+The Hangover,Comedy,7.7,2009
+Pulp Fiction,Crime,8.8,1994
+Fight Club,Drama,8.8,1999
+The Godfather,Crime,9.2,1972
+The GodFather Part II,Crime,9.0,1974
+The Dark Knight Rises,Action,8.4,2012
+Avengers: Engame,Action,8.4,2019
+Avengers: Infinity War,Action,8.5,2018
+Guardians of the Galaxy,Action,8.0,2014
+Iron Man,Action,7.9,2008
+Spider Man: No Way Home,Action,8.2,2021
+Doctor Strange,Action,7.5,2016
+The Lion King,Animation,8.5,1994
+Frozen,Animation,7.4,2013
+Inside Out,Animation,8.1,2015
+Coco,Animation,8.4,2017
+Zootopia,Animation,8.0,2016
+Shrek,Animation,7.9,2001
+Shrek 2,Animation,7.3,2004
+Monsters Inc.,Animation,8.1,2001
+The Incredibles,Animation,8.0,2004
+The Incredibles 2,Animation,7.6,2018
+Titanic,Romance,7.9,1997
+The Notebook,Romance,7.8,2004
+La La Land,Romance,8.0,2016
+Pride & Prejudice,Romance,7.8,2005
+A Star is Born,Romance,7.6,2018
+The Fault in Our Stars,Romance,7.7,2014
+10 Things I Hate About You,Romance,7.3,1999
+Crazy Rich Asians,Romance,7.0,2018
+Pretty Woman,Romance,7.0,1990
+Notting Hill,Romance,7.1,1999
+The Conjuring,Horror,7.5,2013
+The Conjuring 2,Horror,7.3,2016
+Annabelle,Horror,5.4,2014
+Insidious,Horror,6.8,2010
+Insidious: Chapter 2,Horror,6.6,2013
+Get Out,Horror,7.7,2017
+Us,Horror,6.9,2019
+It,Horror,7.3,2017
+It Chapter Two,Horror,6.5,2019
+A Quiet Place,Horror,7.5,2018
+A Quiet Place Part II,Horror,7.2,2021
+The Exorcist,Horror,8.0,1973
+The Sixth Sense,Thriller,8.1,1999
+Se7en,Thriller,8.6,1995
+Gone Girl,Thriller,8.1,2014
+Prisoners,Thriller,8.1,2013
+Shutter Island,Thriller,8.2,2010
+Memento,Thriller,8.4,2000
+Black Swan,Thriller,8.0,2010
+The Silence of the Lambs,Thriller,8.6,1991
+The Usual Suspects,Thriller,8.5,1995
+Whiplash,Drama,8.5,2014
+Parasite,Drama,8.6,2019
+The Green Mile,Drama,8.6,1999
+A Beautiful Mind,Drama,8.2,2001
+Good Will Hunting,Drama,8.3,1997
+The Pursuit of Happyness,Drama,8.0,2006
+Slumdog Millionaire,Drama,8.0,2008
+The Social Network,Drama,7.7,2010
+Spotlight,Drama,8.1,2015
+Moonlight,Drama,7.4,2016
+Joker,Drama,8.4,2019
+American Beauty,Drama,8.3,1999
+The Departed,Crime,8.5,2006
+Goodfellas,Crime,8.7,1990
+Casino,Crime,8.2,1995
+Heat,Crime,8.3,1995
+Reservoir Dogs,Crime,8.3,1992
+The Irishman,Crime,7.9,2019
+Scarface,Crime,8.3,1983
+Donnie Brasco,Crime,7.7,1997
+Training Day,Crime,7.7,2001
+Ocean's Eleven,Crime,7.7,2001
+Ocean's Twelve,Crime,6.5,2004
+Ocean's Thirteen,Crime,6.9,2007
+The Wolf of Wall Street,Comedy,8.2,2013
+The Big Short,Comedy,7.8,2015
+Step Brothers,Comedy,6.9,2008
+Anchorman,Comedy,7.2,2004
+Elf,Comedy,7.0,2003
+Tropic Thunder,Comedy,7.0,2008
+Mean Girls,Comedy,7.1,2004
+The 40-Year-Old Virgin,Comedy,7.1,2005
+Bridesmaids,Comedy,6.8,2011
+Napoleon Dynamite,Comedy,6.9,2004
+The Grand Budapest Hotel,Comedy,8.1,2014
+Batman & Robin,Action,3.8,1997
+Catwoman,Action,3.4,2004
+Transformers: Revenge of the Fallen,Action,6.0,2009
+Suicide Squad,Action,6.0,2016
+The Last Airbender,Fantasy,4.0,2010
+Eragon,Fantasy,5.0,2006
+Twilight,Romance,5.3,2008
+Fifty Shades of Grey,Romance,4.1,2015
+Gigli,Romance,2.6,2003
+Movie 43,Comedy,4.3,2013
+Scary Movie 5,Comedy,3.5,2013
+Norbit,Comedy,4.1,2007
+Son of the Mask,Comedy,2.2,2005
+The Emoji Movie,Animation,3.4,2017
+Shark Tale,Animation,6.0,2004
+Cars 2,Animation,6.2,2011
+Chicken Little,Animation,5.7,2005
+Battlefield Earth,Sci-Fi,2.5,2000
+Jupiter Ascending,Sci-Fi,5.3,2015
+After Earth,Sci-Fi,4.8,2013
